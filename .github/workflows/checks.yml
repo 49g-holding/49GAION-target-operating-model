@@ -25,13 +25,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Read the Protocol pin
-        id: pin
+        id: protocol_pin
         run: echo "sha=$(tr -d ' \n\r' < PROTOCOL-PIN)" >> "$GITHUB_OUTPUT"
       - name: Check out the schemas of 49GAION-protocol at the pin
         uses: actions/checkout@v4
         with:
           repository: 49g-holding/49GAION-protocol
-          ref: ${{ steps.pin.outputs.sha }}
+          ref: ${{ steps.protocol_pin.outputs.sha }}
           path: .deps/protocol
       - uses: actions/setup-python@v5
         with:

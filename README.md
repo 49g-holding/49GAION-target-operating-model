@@ -88,6 +88,8 @@ The writing repository of **`[ORG]AIOC-TOM`, Target Operating Model**: the AIOC 
 
 ## Checks
 
+**The Protocol pin.** The checks read `49GAION-protocol` at the commit in `PROTOCOL-PIN` (its schemas and its `no-org-names` scanner), never at `main`, so a change in the Protocol changes nothing here until this repository moves the pin by pull request.
+
 ```
 python3 tools/check_contracts.py --signature-list <49GAION hub>/upstream/human-floor-signature-types.json --design-return <49GAION-protocol at the pinned commit>/library/contracts/design-return.schema.json
 python3 tools/make_cards.py <49GAION-protocol>/spec/schemas

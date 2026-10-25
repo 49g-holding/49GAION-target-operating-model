@@ -99,4 +99,8 @@ Both must report 0 failures and 0 errors. `check_contracts.py` also checks the a
 
 A change is a pull request: a tested change to the blueprint or a contract, reviewed by someone other than its writer. A decided text is never edited; a change is a new version that names what it supersedes.
 
+## Owner and licence
+
+- **Owner and licence.** The copyright holder, and the licences of the texts (CC BY 4.0, credit "Powered by 49GAION") and of the code (Apache-2.0), are in [`LICENSE.md`](LICENSE.md).
+
 *Powered by 49GAION*

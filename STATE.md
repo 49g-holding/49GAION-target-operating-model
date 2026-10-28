@@ -2,7 +2,7 @@
 
 | Item | State |
 |---|---|
-| Blueprint | `v0.6.1`, draft (19 October 2026): the Chief of Staff takes its COS code, `[ORG]CELL-TCS` → `[ORG]CELL-COSTOM` (`decisions/DR-0007`; Naming Standard R16). It builds on `v0.6.0`, draft (16 October 2026): closed at v0.4.0, which added four features to v0.3.0 (`decisions/DR-0003`); v0.4.1 changed wording only: no natural person, positions only (`decisions/DR-0004`); v0.5.0 links it directly to the stages after it, and every return ends (`decisions/DR-0005`); v0.6.0 adds what the model also states and reads: the strategy frame, delivery model and maturity, critical streams, journeys, the value case, priority, and records of the work as it runs, never about a person (`decisions/DR-0006`; Annex H) |
+| Blueprint | `v0.6.2`, draft (29 October 2026): the release of the records since `v0.6.1`, positions only among them (`decisions/DR-0010`). It builds on `v0.6.1`, draft (19 October 2026): the Chief of Staff takes its COS code, `[ORG]CELL-TCS` → `[ORG]CELL-COSTOM` (`decisions/DR-0007`; Naming Standard R16). It builds on `v0.6.0`, draft (16 October 2026): closed at v0.4.0, which added four features to v0.3.0 (`decisions/DR-0003`); v0.4.1 changed wording only: no natural person, positions only (`decisions/DR-0004`); v0.5.0 links it directly to the stages after it, and every return ends (`decisions/DR-0005`); v0.6.0 adds what the model also states and reads: the strategy frame, delivery model and maturity, critical streams, journeys, the value case, priority, and records of the work as it runs, never about a person (`decisions/DR-0006`; Annex H) |
 | Template | 49GAION AIOC Blueprint Template `v1.5.0` at `06b00d9` |
 | 49GAION versions | Standard `v1.5.0`; Protocol `v1.5.0`, with §13 (Source Lifecycle), §17 (Process and Position Design), §19 (this part) and §20 (Delivery and Implementation) on main under the unreleased `v1.6.0` row; signature list and the design return contract pinned in `contracts/PINS.json` |
 | Protocol section on this AIOC | merged in a revised form as Protocol §19 (`49GAION-protocol` pull request #36; `49GAION/DR-0016`); the draft stays in `upstream/` as history |
@@ -23,7 +23,7 @@
 | Links to the stages after it | release notices to `[ORG]AIOC-PPD`; returns from `[ORG]AIOC-PPD` and `[ORG]AIOC-DI` (blueprint §5.10). Their connections are signed by this AIOC's `[ORG]HOAC-ACS` position (H-35); this AIOC stands alone without them |
 | Installed in any `[ORG]AION` | no |
 | Mother repository | `github.com/49g-holding/49GAION-target-operating-model`, public, from 25 October 2026 (`decisions/DR-0008`): every file of the first instance's repository at its pinned commit `302e98b`, unchanged; the blueprint's SHA-256 is the pinned one. The Library pin moves here once this text is merged |
-| Readings | `49GAION/DR-0041`, the complete definition, and `49GAION/DR-0042`, its clarifications: this repository is read with them (`decisions/DR-0008`), unreleased |
+| Readings | `49GAION/DR-0041`, the complete definition, and `49GAION/DR-0042`, its clarifications: this repository is read with them (`decisions/DR-0008`), released in `v0.6.2` |
 
 The four features proposed for later in v0.3.0 are in v0.4.0 (`decisions/DR-0003`).
 

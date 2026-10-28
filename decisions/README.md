@@ -15,5 +15,6 @@ One `DR-####` file per decided subject, numbered in order. A record file never c
 | [`DR-0007`](DR-0007-tom-v0-6-1-cos-code.md) | 2026-10-19 | TOM v0.6.1: the Chief of Staff takes its COS code | in force |
 | [`DR-0008`](DR-0008-the-mother-repository-and-the-readings.md) | 2026-10-25 | The mother repository of 49GAION Target Operating Model, and the readings of `49GAION/DR-0041` and `DR-0042` | in force on merge |
 | [`DR-0009`](DR-0009-positions-only.md) | 2026-10-28 | Target Operating Model mother: positions only, brought into line with 49GAION/DR-0048 and DR-0049 | in force on merge |
+| [`DR-0010`](DR-0010-release-v0-6-2.md) | 2026-10-29 | Target Operating Model mother: release `v0.6.2`, carrying the records since `v0.6.1` | in force on merge |
 
 *Powered by 49GAION*

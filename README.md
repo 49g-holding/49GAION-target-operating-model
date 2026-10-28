@@ -4,6 +4,8 @@ The mother repository of the Library part **49GAION Target Operating Model**. In
 
 > **Reading (49GAION DR-0041, DR-0042).** The complete definition of 49GAION, approved by its governing seat on 25 October 2026, is `49GAION-FRAMEWORK.md` in `github.com/49g-holding/49GAION`, with the clarifications of the same day. Where this repository differs from it, the definition governs, and this text is read with it. This part designs an organisation of human positions; how human and how much AI the organisation is, is the `[ORG]AION`'s own design work, prepared by it and decided by the governance seat. Every rule here that names `[ORG]AIOC-OCO` or the human hub reads as the Top Management Group, the hub of the operation, human and AI. The panel is the organisation's own code interface, and the AI chat workspace is its back office. The readings are in [`decisions/DR-0008`](decisions/DR-0008-the-mother-repository-and-the-readings.md). Nothing here is removed.
 
+> **Reading (49GAION DR-0048, DR-0049; `decisions/DR-0009`).** Only AIOCs and HOAC positions: every human place here is a position, and who holds it, and how, is the organisation's own mechanism, outside the system. The acting filler, deputies of human seats and `appoint-acting-filler` are withdrawn.
+
 > **TOM in one page**
 >
 > TOM (Target Operating Model) turns an organisation's own documents into a written model of how it should work. For each part of the organisation, the model sets out what the part must be able to do, how its main work flows, who decides what, and where it hands work to other parts and to outside parties. It names roles and what each decides. It does not say what fills a role.

@@ -3,7 +3,7 @@
 **`[ORG]AIOC-TOM` v0.4.0 · 15 October 2026.**
 
 1. **One change, one pull request**, reviewed by someone other than its writer.
-2. **Positions, never people.** No person's name in any file; holders are kept only in an organisation's private holders register.
+2. **Positions, never people.** No person's name in any file; who holds a position is the organisation's own mechanism, outside the system.
 3. **No organisation data.** This repository is written for any organisation. An organisation's values, sources and run records live in its own records repository. The register of any earlier, private texts lives in the organisation's code project.
 4. **Cite every rule** to its source: a 49GAION text by section and version, a carried rule by `docs/CARRIED-RULES.md` section. Never invent a fact, a version, a score or an appointment. `NOT_RUN` is never PASS.
 5. **The blueprint governs the cards.** Edit the card data block of blueprint §17 only, then run `python3 tools/make_cards.py <49GAION-protocol/spec/schemas>`. It must report 0 errors: 26 unit cards and 18 bot cards.

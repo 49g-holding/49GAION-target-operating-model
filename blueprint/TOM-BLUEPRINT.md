@@ -246,7 +246,7 @@ card:
 | The builder of every tool | `<filled>` |
 | The Library blueprint this core is made from | 49GAION Target Operating Model, part card `v1`; this text is its mother blueprint |
 | **The Requesting Authority**: the seat that asks for the design and decides it | `<code of the human Cell carrying [ORG]HOAC-GOV>`, or of a human Cell carrying a HOAC label whose `authority_scope`, delegated by that Cell under `delegate-authority`, covers the design decisions of this AIOC (Standard §4.4, item 8). Its code is the `answering_cell` of every non-delegable row, except a row of a listed type, whose `answering_cell` is the Cell that signs that type (for `set-purpose-or-values`, the Cell carrying `[ORG]HOAC-GOV`) |
-| **The TOM Design Lead position** | a HOAC position (`[ORG]HOAC-ACS`), a legal persona. Who occupies it is top management's own mechanism; this AIOC never sees it (Standard §1.1, item 9, proposed by `49GAION/DR-0013`). One rule is given to that mechanism, and is never checked by this AIOC: the Design Lead position and the Requesting Authority's position are never occupied by the same natural person. Where the organisation cannot meet it, GOV records a compensating control (Standard §4.4, item 12), for example an outside review of the Design Lead's attestations and rulings |
+| **The TOM Design Lead position** | a HOAC position (`[ORG]HOAC-ACS`), a legal persona. Who holds it is the organisation's own mechanism, outside the system; this AIOC never sees it (Standard §1.1, item 9; `49GAION/DR-0049`). The Design Lead position and the Requesting Authority's position are two positions, two parties: T0 fails when they are the same Cell (TEST-TOM, case 29). Whether one person holds both is the organisation's own mechanism, which this AIOC never reads |
 | **The source of record** | `[ORG]AIOC-SL`: the only source this AIOC asks and files into. Sources of other types may be read beside it, each through its own adapter (§4.3). |
 | **The engine register** | held at the tool gateway, in the Charter (Standard §4.4 item 11); read by this AIOC (Annex E.12) |
 
@@ -269,9 +269,9 @@ card:
 
 ## 3. Positions
 
-| Position (standard title) | Purpose | Reports to | Run today by | Deputy |
+| Position (standard title) | Purpose | Reports to | Run today by | Cover |
 |---|---|---|---|---|
-| TOM Design Lead | the accountable seat of this AIOC and the owner of its path: owns the fixed tests of its parts; rules on contested review findings; accepts a reduced review level within the TM Cell's permission; decides a re-base; attests the method. Answers for the method, never for the organisation's choices | the Cell carrying `[ORG]HOAC-TM` | a HOAC position (`[ORG]HOAC-ACS`); who occupies it is top management's own mechanism, never seen by this AIOC | as top management arranges (`appoint-acting-filler`, Standard §4.1, item 12) |
+| TOM Design Lead | the accountable seat of this AIOC and the owner of its path: owns the fixed tests of its parts; rules on contested review findings; accepts a reduced review level within the TM Cell's permission; decides a re-base; attests the method. Answers for the method, never for the organisation's choices | the Cell carrying `[ORG]HOAC-TM` | a HOAC position (`[ORG]HOAC-ACS`); who holds it is the organisation's own mechanism, outside the system, never seen by this AIOC | the organisation's own mechanism, outside the system |
 | Chief of Staff | keep each run moving, honest and traced; the only door to Source Lifecycle | TOM Design Lead | an agent (`[ORG]CELL-COSTOM`) | none; the run halts |
 | Source Proxy | answer only from the sources, with a citation, or refuse | Chief of Staff | an agent (`[ORG]CELL-TSP`) | none; the step halts |
 | Request Analyst | reconstruct the request into the Design Brief; derive and read the lenses; write the party register; raise only the needs that pass the leverage test; author A of the frame | Chief of Staff | an agent (`[ORG]CELL-TRA`) | none; the step halts |
@@ -290,7 +290,7 @@ card:
 - The **Requesting Authority** is not a position of this AIOC (§2.1). It decides the design; this AIOC only prepares the decision.
 - The Process Auditor of v0.2.0 is not a position. The process audit is kept as review point RP1b (§5.8).
 - No AI Cell signs anything (Protocol §10, item 3). Each AI Cell's bot has its own identity card (Annex A.5 of the template; §17).
-- **No natural person** (Standard §1.1, item 9, proposed by `49GAION/DR-0013`). Every human position this AIOC deals with, its own and the organisation's, is a HOAC position, a legal persona. This AIOC addresses positions only, through their HU ports; who occupies them, and how, is top management's own mechanism, and no part of this AIOC holds, reads or infers it.
+- **No natural person** (Standard §1.1, item 9, proposed by `49GAION/DR-0013`). Every human position this AIOC deals with, its own and the organisation's, is a HOAC position, a legal persona. This AIOC addresses positions only, through their HU ports; who holds them, and how, is the organisation's own mechanism, outside the system, and no part of this AIOC holds, reads or infers it.
 - Each position's role pack is carried in the role cards of the capabilities it performs (§4, §5).
 
 ---
@@ -1393,7 +1393,7 @@ Every decision that only a human seat can take is listed here once, with its sea
 | ID | Decision | Seat | Default |
 |---|---|---|---|
 | H-01 | Name the Requesting Authority's Cell: the GOV Cell itself, or a human Cell to which it delegates the design decisions (`delegate-authority`) | GOV | none: T0 fails |
-| H-02 | Where the organisation's own mechanism cannot keep the TOM Design Lead position apart from the Requesting Authority's position (§2.1), record a compensating control (Standard §4.4, item 12). This AIOC never checks it and never reads who occupies a position | GOV | none recorded; nothing in this AIOC waits for it |
+| H-02 | Withdrawn (`49GAION/DR-0049`): a compensating control for one person behind the TOM Design Lead and the Requesting Authority's positions is the organisation's own; nothing in this AIOC records or reads it | — | — |
 | H-03 | Sign the purpose-and-values rows (`set-purpose-or-values`, HF-04) at the gateway's signature surface | GOV | undecided until signed |
 | H-04 | Add `accept-operating-model` to the organisation's own signature list (`change-org-standard-or-signature-list`; Protocol §4.9 item 4), related to HF-03 | GOV | added before the first run; until then final-status rows are decided with a fresh live sign-in (HF-10) |
 | H-05 | The engine register at the tool gateway: which families it carries; each engine's confidentiality ceiling, retention and use (`change-gateway-policy`, Standard §4.4 item 11) | GOV and the TM Cell, both signing | at least four families: at least two that may author and at least two used for reviewing only; ceilings such that two author engines of two families, and three reviewer engines of two other families, may receive the organisation's highest confidentiality level |
@@ -1402,7 +1402,7 @@ Every decision that only a human seat can take is listed here once, with its sea
 | H-08 | Whether any route other than the Chief of Staff of `[ORG]AIOC-SL` may ever ask the organisation. At 49GAION, the matching line on Protocol §13 item 7: if a part ever replaces Source Lifecycle, the Protocol must name the new asking route | GOV (the organisation's; and 49GAION's governing seat for the Protocol) | no: adapters only read |
 | H-09 | Send the drafts of `upstream/` to 49GAION; each reaches 49GAION only as a pull request merged by 49GAION's governing seat | GOV | after v0.4.0 is accepted |
 | H-10 | Install `[ORG]AIOC-TOM` (`create-or-install-unit`); its `change-parent`; its `restart-stopped-unit` | TM Cell | none |
-| H-11 | Arrange the TOM Design Lead position by top management's own mechanism; appoint an acting filler (`appoint-acting-filler`). Nothing of who occupies it enters this blueprint | TM Cell | none: the AIOC does not join |
+| H-11 | Who holds the TOM Design Lead position, and how, is decided outside the system (`49GAION/DR-0048`, `DR-0049`). Nothing of it enters this blueprint | the organisation's own mechanism, outside the system | none: the AIOC does not join |
 | H-12 | `reduced_review_permitted` | TM Cell | `no` |
 | H-13 | `review_budget_per_run`, and the AIOC's `budget_cap` (`widen-ai-budget-or-unattended-action`) | TM Cell | none: must be set |
 | H-14 | `non_response_passes` and the waiting deadlines | TM Cell | none: must be set |
@@ -1555,7 +1555,7 @@ parts:
       accountable_to: "[ORG]CELL-TMS"       # example code of the Cell carrying [ORG]HOAC-TM
       entity: "<entity>"
       authority_scope:
-        decision_types: ["change-fixed-test-or-threshold", "create-or-install-unit", "change-filler", "retire-unit", "restart-stopped-unit", "move-work-toward-ai", "appoint-acting-filler"]
+        decision_types: ["change-fixed-test-or-threshold", "create-or-install-unit", "change-filler", "retire-unit", "restart-stopped-unit", "move-work-toward-ai"]
         entity: "<entity>"
         expires: "2027-10-14"                # placeholder; each organisation sets it
         authority: "delegated"

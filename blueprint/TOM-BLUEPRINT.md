@@ -262,7 +262,7 @@ card:
   - **`[ORG]AIOC-SL`** holds every source and every contact with a person. This AIOC holds only references and its own design records. It asks; the Chief of Staff of `[ORG]AIOC-SL` gets the answer and records it. Source Lifecycle never designs; this AIOC never records a source, except its own filed release and design reports.
   - **`[ORG]AIOC-PPD`**, the next stage, is told of each decided release directly (§5.9 step 8a), reads it from Source Lifecycle starting with its role register, and returns what it cannot use (§5.10). **`[ORG]AIOC-DI`**, the last stage, may also return what it cannot use. This AIOC writes no position or job description, and assigns work only to accountable roles.
   - **`[ORG]AIOC-OCO`** installs, fixes and upgrades this AIOC; it never grades it (Standard §2.3, item 9).
-  - **The AION Builder**, a 49GAION capability, installs `[ORG]AIOC-TOM` in the `[ORG]AION` through OCO and uses its filed TOM Release. The AIOC itself belongs to the `[ORG]AION`. It is also a product on its own (`docs/OUTPUT.md` §14).
+  - **49GAION Edition Maker**, part 6 of 49GAION (`49GAION/DR-0035`), installs `[ORG]AIOC-TOM` in the `[ORG]AION` through OCO and uses its filed TOM Release. The AIOC itself belongs to the `[ORG]AION`. It is also a product on its own (`docs/OUTPUT.md` §14).
 - **Overlap.** None known. Where an organisation already holds earlier design capabilities of the same kind, their content is carried here (`docs/DESIGN-BASIS.md`) and they are retired through OCO.
 
 ---

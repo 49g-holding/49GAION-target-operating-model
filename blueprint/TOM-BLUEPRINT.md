@@ -7,7 +7,7 @@ blueprint:
   organisation: "<organisation>"          # filled in each organisation's own copy
   type: "specialised"
   org_aion: "[ORG]AION"
-  blueprint_version: "v0.6.2"
+  blueprint_version: "v0.6.3"
   status: "draft"
   template:
     name: "49GAION AIOC Blueprint Template"
@@ -25,7 +25,7 @@ blueprint:
     functional: ["Request Reconstruction", "Needs Requests", "Structuring", "Entity Packaging", "Entity Model Design", "Hand-offs", "Operational Walkthrough", "Independent Review", "Decision Package and Release"]
 ```
 
-# Blueprint · `[ORG]AIOC-TOM` · Target Operating Model · `v0.6.2`
+# Blueprint · `[ORG]AIOC-TOM` · Target Operating Model · `v0.6.3`
 
 **Draft, closed at v0.4.0, 15 October 2026; v0.4.1 the same day changes wording only (`decisions/DR-0004`): every human position is a HOAC position, and no natural person exists in the system. v0.5.0, 16 October 2026, links this AIOC directly to the stages after it (`decisions/DR-0005`): a release notice to Process and Position Design on every filing, and the returns of Process and Position Design and of Delivery and Implementation received directly, each carried to an end under the Library's design return contract (§5.10). v0.6.0, 16 October 2026, adds what the model also states and reads (`decisions/DR-0006`; Annex H): the strategy on one page, how each capability is delivered and how mature it is, the critical value streams, each outside party's journey, the value case, the priority of each element, and records of the work as it runs today, never about a person. v0.6.1, 19 October 2026: the Chief of Staff takes its COS code `[ORG]CELL-COSTOM` (`decisions/DR-0007`).** Written by `[ORG]AIOC-OCO` on the directions recorded in `decisions/DR-0001`, `decisions/DR-0002`, `decisions/DR-0003`, `decisions/DR-0005` and `decisions/DR-0006`. Version 0.4.0 adds four features to the closed v0.3.0, and removes or weakens nothing of it: a register of the roles across the release (§5.6; Annex E.17), a run depth (Annex F), two independent authors at Frame and Design (Annex G), and reference models from the 49GAION Library (§5.5; Annex B.5). Every rule here either rests on a 49GAION text, is carried from the case study (`docs/DESIGN-BASIS.md`; full rule texts in `docs/CARRIED-RULES.md`), or is new in this AIOC and marked **New**. Nothing here has run. Every fixed test reads `NOT_RUN`.
 
@@ -38,7 +38,7 @@ blueprint:
 > **What goes in**
 > 1. An approved design request, recorded in Source Lifecycle, the organisation's library of sources: who asks, what the design is for, what should be different, and how fine the model should be (light, standard or deep).
 > 2. The organisation's own documents, read only by reference. The input socket checks them, cuts them into numbered passages, labels each passage with how far it can be trusted, and hands the engine one sealed Input Pack.
-> 3. Answers to what the documents do not say. TOM never asks a person. It asks the Chief of Staff of Source Lifecycle, who gets the answer from the right person, has it approved and recorded, and returns it. Each answer arrives as a new version of the Input Pack.
+> 3. Answers to what the documents do not say. TOM never asks a person. It asks the Chief of Staff of Source Lifecycle, who gets the answer from the position that can give it, has it approved and recorded, and returns it. Each answer arrives as a new version of the Input Pack.
 > 4. Where the organisation has them, records of how the work runs today, exported by role and by process and never about a person. Where there are none, the model says so and goes on.
 >
 > Today Source Lifecycle is the only source. Other kinds of source plug into the same socket, each through its own adapter file, and only to be read.
@@ -54,7 +54,7 @@ blueprint:
 > 8. Walk: test the model against realistic situations, and record where it holds and where it stops.
 > 9. Decide and release: the organisation decides each element; the decided model is frozen and filed back in Source Lifecycle, and Process and Position Design is told at once.
 >
-> Each stage has one input, one output and one test that says when it is done. The frame and each part's design are written twice, separately, by two AI engines of different families; their differences are settled on the sources or put to the organisation. Inside every stage, three or more other independent AI engines check the output: each alone first, then in a short debate held to quotes. They do not vote. A person, the TOM Design Lead, rules on what they still dispute.
+> Each stage has one input, one output and one test that says when it is done. The frame and each part's design are written twice, separately, by two AI engines of different families; their differences are settled on the sources or put to the organisation. Inside every stage, three or more other independent AI engines check the output: each alone first, then in a short debate held to quotes. They do not vote. A human position, the TOM Design Lead, rules on what they still dispute.
 >
 > **What comes out: the TOM Release**
 > 1. The Decision Package: a plain summary, what is still unknown, and the choices to make.
@@ -96,7 +96,7 @@ blueprint:
 | Made from | the Library part 49GAION Target Operating Model, part card `v1` (DRAFT), and the Protocol section of the same name (§19), merged on 15 October 2026 (`49GAION/DR-0016`) |
 | Template | 49GAION AIOC Blueprint Template `v1.5.0` at `06b00d9` |
 | Mother | 49GAION Target Operating Model, part card `v1`. This text is its mother blueprint (`49GAION/DR-0016`, item 7) |
-| Blueprint version and status | `v0.6.2` · draft, closed at v0.4.0 (the Closure statement above §0); v0.4.1 changed wording only (`decisions/DR-0004`); v0.5.0 adds the direct links to the stages after it (`decisions/DR-0005`); v0.6.0 adds Annex H (`decisions/DR-0006`); v0.6.1 gives the Chief of Staff its COS code `[ORG]CELL-COSTOM` (`decisions/DR-0007`) |
+| Blueprint version and status | `v0.6.3` · draft, closed at v0.4.0 (the Closure statement above §0); v0.4.1 changed wording only (`decisions/DR-0004`); v0.5.0 adds the direct links to the stages after it (`decisions/DR-0005`); v0.6.0 adds Annex H (`decisions/DR-0006`); v0.6.1 gives the Chief of Staff its COS code `[ORG]CELL-COSTOM` (`decisions/DR-0007`) |
 | Writing repository | `<org>aioc-tom`, plus `-records` for an organisation's runs and `-records-restricted` for run records that touch Strictly confidential sources or personal data (Naming Standard R9) |
 | Code project | `<org>aioc-tom`, on the organisation's code platform |
 | Panel | not yet built |
@@ -119,7 +119,7 @@ card:
   inner_units: ["[ORG]CELL-TDL", "[ORG]CELL-COSTOM", "[ORG]POD-TRR", "[ORG]POD-TS", "[ORG]POD-TEP", "[ORG]POD-TEM", "[ORG]POD-TH", "[ORG]POD-TW", "[ORG]POD-TR"]
   type: "specialised"
   org_aion: "[ORG]AION"
-  card_version: "v0.6.2"
+  card_version: "v0.6.3"
   input_door: "Chief of Staff"
   wake: { method: "queue", verified: false }
   receives:
@@ -165,7 +165,7 @@ card:
   anatomy:
     panel: { health: { tests: true, metrics: ["stuck", "returned", "late", "needs open", "needs past deadline", "run state", "pack version", "reviews held", "review budget used", "run depth", "authoring", "role findings open", "returns open", "returns past deadline", "return age", "return round", "strategy elements not given", "activity profile"] } }
     back_office: { converses_with_humans: false, hosts: ["Chief of Staff", "Office"], protocol_traffic: true }
-    definition: { location: "<org>aioc-tom, blueprint/TOM-BLUEPRINT.md", version: "v0.6.2" }
+    definition: { location: "<org>aioc-tom, blueprint/TOM-BLUEPRINT.md", version: "v0.6.3" }
     delivery: { rollback: "one-click" }
     connectors:
       - { role: "source of record", connector: "[ORG]AIOC-SL output socket", access_managed_in: "panel" }   # the Panel shows and requests it; the grant itself is signed at the tool gateway as connect-external-port by the [ORG]HOAC-ACS seat over [ORG]AIOC-SL (Protocol §13, item 5; upstream/PROPOSALS.md, item 4)
@@ -173,10 +173,10 @@ card:
       - { role: "returns from the last stage", connector: "[ORG]AIOC-DI output port: returns in", access_managed_in: "panel" }   # signed as above (Protocol §20, item 3; H-35)
     gateway: { metering_id: "<per-AIOC metering id>" }
   full_name: "Target Operating Model"
-  version: "0.6.2"
+  version: "0.6.3"
   lineage: { id: "[ORG]AIOC-TOM", version: "0.6.2", relation: "original" }
   lifecycle_state: "designed"
-  blueprint_version: "v0.6.2"
+  blueprint_version: "v0.6.3"
   template_version: "v1.5.0"
   accountable_to: "[ORG]CELL-TMS"         # example code of the Cell carrying [ORG]HOAC-TM (Naming Standard R15); never a Cell inside this AIOC
   top_cell: "[ORG]CELL-TDL"
@@ -248,7 +248,7 @@ card:
 | **The Requesting Authority**: the seat that asks for the design and decides it | `<code of the human Cell carrying [ORG]HOAC-GOV>`, or of a human Cell carrying a HOAC label whose `authority_scope`, delegated by that Cell under `delegate-authority`, covers the design decisions of this AIOC (Standard §4.4, item 8). Its code is the `answering_cell` of every non-delegable row, except a row of a listed type, whose `answering_cell` is the Cell that signs that type (for `set-purpose-or-values`, the Cell carrying `[ORG]HOAC-GOV`) |
 | **The TOM Design Lead position** | a HOAC position (`[ORG]HOAC-ACS`), a legal persona. Who holds it is the organisation's own mechanism, outside the system; this AIOC never sees it (Standard §1.1, item 9; `49GAION/DR-0049`). The Design Lead position and the Requesting Authority's position are two positions, two parties: T0 fails when they are the same Cell (TEST-TOM, case 29). Whether one person holds both is the organisation's own mechanism, which this AIOC never reads |
 | **The source of record** | `[ORG]AIOC-SL`: the only source this AIOC asks and files into. Sources of other types may be read beside it, each through its own adapter (§4.3). |
-| **The engine register** | held at the tool gateway, in the Charter (Standard §4.4 item 11); read by this AIOC (Annex E.12) |
+| **The engine register** | held at the tool gateway, which is carried by the Charter and run as code beside the core, outside the reach of every AI (Standard §4.4, item 11; `49GAION/DR-0052`); read by this AIOC (Annex E.12) |
 
 ### 2.2 Placement
 
@@ -262,7 +262,7 @@ card:
   - **`[ORG]AIOC-SL`** holds every source and every contact with a person. This AIOC holds only references and its own design records. It asks; the Chief of Staff of `[ORG]AIOC-SL` gets the answer and records it. Source Lifecycle never designs; this AIOC never records a source, except its own filed release and design reports.
   - **`[ORG]AIOC-PPD`**, the next stage, is told of each decided release directly (§5.9 step 8a), reads it from Source Lifecycle starting with its role register, and returns what it cannot use (§5.10). **`[ORG]AIOC-DI`**, the last stage, may also return what it cannot use. This AIOC writes no position or job description, and assigns work only to accountable roles.
   - **`[ORG]AIOC-OCO`** installs, fixes and upgrades this AIOC; it never grades it (Standard §2.3, item 9).
-  - **49GAION Edition Maker**, part 6 of 49GAION (`49GAION/DR-0035`), installs `[ORG]AIOC-TOM` in the `[ORG]AION` through OCO and uses its filed TOM Release. The AIOC itself belongs to the `[ORG]AION`. It is also a product on its own (`docs/OUTPUT.md` §14).
+  - **Installation.** The core designs and proposes `[ORG]AIOC-TOM`, the governing seat approves it, and the Top Management Group installs it in the operation and uses its filed TOM Release (the complete definition, Part E). The AIOC itself belongs to the `[ORG]AION`. It is also a product on its own (`docs/OUTPUT.md` §14).
 - **Overlap.** None known. Where an organisation already holds earlier design capabilities of the same kind, their content is carried here (`docs/DESIGN-BASIS.md`) and they are retired through OCO.
 
 ---
@@ -584,7 +584,7 @@ TEST-TOM-TRR v5: TEST-TOM v5, cases 4, 5, 8, 14, 15, 28, 73-76, 83, 91-93, 109-1
 | Field | Content |
 |---|---|
 | Name | Needs Requests |
-| What it is | The only way this AIOC learns anything a source does not already say. A needs request asks the **Chief of Staff of `[ORG]AIOC-SL`** for one thing: a document, an explainer, a confirmation, a status, an export or a decision. That Chief of Staff gets it from the right person, has it approved and recorded as a source, and answers by reference. With every pass goes a **Missing Report**: everything still missing for the operating model, by kind, in plain words. The full contract is in `docs/INTAKE-WITH-SOURCE-LIFECYCLE.md`; the forms and explainer templates are in `docs/ASKING-CATALOGUE.md`. Answers come back through the Input socket as new pack versions (§4.3). |
+| What it is | The only way this AIOC learns anything a source does not already say. A needs request asks the **Chief of Staff of `[ORG]AIOC-SL`** for one thing: a document, an explainer, a confirmation, a status, an export or a decision. That Chief of Staff gets it from the position that can give it, has it approved and recorded as a source, and answers by reference. With every pass goes a **Missing Report**: everything still missing for the operating model, by kind, in plain words. The full contract is in `docs/INTAKE-WITH-SOURCE-LIFECYCLE.md`; the forms and explainer templates are in `docs/ASKING-CATALOGUE.md`. Answers come back through the Input socket as new pack versions (§4.3). |
 | Purpose | Get what the design needs with the least burden on people, and without ever treating spoken words as a source. |
 | Scope | Does: write, batch, send, track and withdraw needs requests; send the Missing Report; receive answers and status messages by reference. Does not: contact a person; answer a request itself; draft the organisation's content; choose the person who answers; decide. |
 | Inputs | Needs candidates from any Pod, each with its leverage proof. |
@@ -1450,6 +1450,7 @@ H-01 to H-27, H-30 to H-34, H-36, H-37 and H-39 are taken by GOV, the TM Cell or
 | v0.6.0 | 2026-10-16 | Adds what the model also states and reads, under the direction recorded in `decisions/DR-0006`; removes nothing (Annex H, new): the strategy frame at S1, asked once through EX-10 and decided in one row (H.1); each capability's delivery model, make-or-buy and maturity, and each value stream's criticality, at S5 (H.2–H.4); each outside party's journey at S6 (H.5); the value case and each element's priority, by code, at S8 (H.6, H.7); records of the work as it runs today, exports by role-type and process only, the refusal `person-level records` and the activity profile (H.8); the organisation dictionary read where served (H.9). Four release parts (twenty in all); a decided priority on each element decision; the v0.6 contracts (`tom-release`, `input-pack`, `needs-request`, `needs-answer`); adapter `ADP-SL` v1.1.0; H-07 rewritten; H-39, H-40. TEST-TOM v5 (cases 109–123) | v1.5.0 | this commit |
 | v0.6.1 | 2026-10-19 | The Chief of Staff takes its COS code: `[ORG]CELL-TCS` → `[ORG]CELL-COSTOM` (Naming Standard R16, `49GAION/DR-0028`; `decisions/DR-0007`). The old code is retired and kept in the card's lineage; the part test is renamed; the needs-request contract names the new code and takes the id `v0.6.1`; nothing else changes | v1.5.0 | this repository's pull request for this version |
 | v0.6.2 | 2026-10-29 | Released on the governing seat's word (`decisions/DR-0010`): it carries the records since v0.6.1, `decisions/DR-0008`, `decisions/DR-0009`; positions only (`49GAION/DR-0048`, `DR-0049`). Every card takes v0.6.2; the Protocol pin moves to the Operating Protocol `v2.1.0`. No other rule changes. |
+| v0.6.3 | 2026-10-29 | Corrections under `49GAION/DR-0052` (`decisions/DR-0011`): installation follows the current roles (the core designs and proposes, the governing seat approves, the Top Management Group installs), the withdrawn AION Builder gone; positions in place of persons (the TOM Design Lead, the position that can answer); the gateway runs as code beside the core. Every card takes v0.6.3. The Protocol pin moves to the Operating Protocol `v2.2.0`. No rule of this part is added or dropped. |
 
 ---
 
@@ -1538,8 +1539,8 @@ The parts inside this AIOC (`docs/CELLS-AND-PODS.md` of `49GAION-aioc`). The rol
 parts:
   defaults:
     accountable_to: "[ORG]CELL-TDL"
-    card_version: "v0.6.2"
-    version: "0.6.2"
+    card_version: "v0.6.3"
+    version: "0.6.3"
     lifecycle_state: "designed"
     test_version: "v5"
     test_owner: "[ORG]CELL-TDL"
@@ -2625,4 +2626,4 @@ Each reads by reference from Source Lifecycle, as it reads every part.
 
 **Done when.** The checks of H.11 pass at their gates, and RP1, RP5, RP6 and RP8 settle with these additions in their packets.
 
-*Blueprint · `[ORG]AIOC-TOM` · Target Operating Model · v0.6.2 · Powered by 49GAION*
+*Blueprint · `[ORG]AIOC-TOM` · Target Operating Model · v0.6.3 · Powered by 49GAION*

@@ -15,7 +15,7 @@ The mother repository of the Library part **49GAION Target Operating Model**. In
 > **What goes in**
 > 1. An approved design request, recorded in Source Lifecycle, the organisation's library of sources: who asks, what the design is for, what should be different, and how fine the model should be (light, standard or deep).
 > 2. The organisation's own documents, read only by reference. The input socket checks them, cuts them into numbered passages, labels each passage with how far it can be trusted, and hands the engine one sealed Input Pack.
-> 3. Answers to what the documents do not say. TOM never asks a person. It asks the Chief of Staff of Source Lifecycle, who gets the answer from the right person, has it approved and recorded, and returns it. Each answer arrives as a new version of the Input Pack.
+> 3. Answers to what the documents do not say. TOM never asks a person. It asks the Chief of Staff of Source Lifecycle, who gets the answer from the position that can give it, has it approved and recorded, and returns it. Each answer arrives as a new version of the Input Pack.
 > 4. Where the organisation has them, records of how the work runs today, exported by role and by process and never about a person. Where there are none, the model says so and goes on.
 >
 > Today Source Lifecycle is the only source. Other kinds of source plug into the same socket, each through its own adapter file, and only to be read.
@@ -31,7 +31,7 @@ The mother repository of the Library part **49GAION Target Operating Model**. In
 > 8. Walk: test the model against realistic situations, and record where it holds and where it stops.
 > 9. Decide and release: the organisation decides each element; the decided model is frozen and filed back in Source Lifecycle, and Process and Position Design is told at once.
 >
-> Each stage has one input, one output and one test that says when it is done. The frame and each part's design are written twice, separately, by two AI engines of different families; their differences are settled on the sources or put to the organisation. Inside every stage, three or more other independent AI engines check the output: each alone first, then in a short debate held to quotes. They do not vote. A person, the TOM Design Lead, rules on what they still dispute.
+> Each stage has one input, one output and one test that says when it is done. The frame and each part's design are written twice, separately, by two AI engines of different families; their differences are settled on the sources or put to the organisation. Inside every stage, three or more other independent AI engines check the output: each alone first, then in a short debate held to quotes. They do not vote. A human position, the TOM Design Lead, rules on what they still dispute.
 >
 > **What comes out: the TOM Release**
 > 1. The Decision Package: a plain summary, what is still unknown, and the choices to make.
@@ -52,7 +52,7 @@ The mother repository of the Library part **49GAION Target Operating Model**. In
 
 The writing repository of **`[ORG]AIOC-TOM`, Target Operating Model**: the AIOC that designs an organisation's target operating model from its own documents. It is the second stage of an organisation's design under 49GAION, after Source Lifecycle: the Library part 49GAION Target Operating Model (Operating Protocol §19; `49GAION/DR-0016`), whose mother blueprint this is. In each organisation this repository is named `<org>aioc-tom` (49GAION Naming Standard R9).
 
-**Status: draft `v0.6.2`, 29 October 2026: the release of the records since `v0.6.1`, positions only among them (`decisions/DR-0010`); `v0.6.1`, 19 October 2026: the Chief of Staff takes its COS code `[ORG]CELL-COSTOM` (`decisions/DR-0007`); it builds on `v0.6.0`, 16 October 2026: closed at v0.4.0; v0.4.1 changed wording only (`decisions/DR-0004`); v0.5.0 links this AIOC directly to the stages after it (`decisions/DR-0005`); v0.6.0 adds what the model also states and reads (`decisions/DR-0006`; blueprint Annex H). Nothing here has run; every fixed test reads `NOT_RUN`.** Version 0.4.0 added four features to the closed v0.3.0 and removed nothing (`decisions/DR-0003`).
+**Status: draft `v0.6.3`, 29 October 2026: corrections under `49GAION/DR-0052` (`decisions/DR-0011`); `v0.6.2`, 29 October 2026: the release of the records since `v0.6.1`, positions only among them (`decisions/DR-0010`); `v0.6.1`, 19 October 2026: the Chief of Staff takes its COS code `[ORG]CELL-COSTOM` (`decisions/DR-0007`); it builds on `v0.6.0`, 16 October 2026: closed at v0.4.0; v0.4.1 changed wording only (`decisions/DR-0004`); v0.5.0 links this AIOC directly to the stages after it (`decisions/DR-0005`); v0.6.0 adds what the model also states and reads (`decisions/DR-0006`; blueprint Annex H). Nothing here has run; every fixed test reads `NOT_RUN`.** Version 0.4.0 added four features to the closed v0.3.0 and removed nothing (`decisions/DR-0003`).
 
 ## Where to read
 
@@ -101,7 +101,7 @@ Both must report 0 failures and 0 errors. `check_contracts.py` also checks the a
 
 ## How a change is made
 
-A change is a pull request: a tested change to the blueprint or a contract, reviewed by someone other than its writer. A decided text is never edited; a change is a new version that names what it supersedes.
+A change is a pull request: a tested change to the blueprint or a contract, reviewed by a party other than its writer. A decided text is never edited; a change is a new version that names what it supersedes.
 
 ## Owner and licence
 

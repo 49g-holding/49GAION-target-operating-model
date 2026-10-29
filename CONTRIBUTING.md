@@ -2,7 +2,7 @@
 
 **`[ORG]AIOC-TOM` v0.4.0 · 15 October 2026.**
 
-1. **One change, one pull request**, reviewed by someone other than its writer.
+1. **One change, one pull request**, reviewed by a party other than its writer.
 2. **Positions, never people.** No person's name in any file; who holds a position is the organisation's own mechanism, outside the system.
 3. **No organisation data.** This repository is written for any organisation. An organisation's values, sources and run records live in its own records repository. The register of any earlier, private texts lives in the organisation's code project.
 4. **Cite every rule** to its source: a 49GAION text by section and version, a carried rule by `docs/CARRIED-RULES.md` section. Never invent a fact, a version, a score or an appointment. `NOT_RUN` is never PASS.

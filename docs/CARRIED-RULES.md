@@ -43,7 +43,7 @@ The earlier chain is a case study: blueprint §0.
 
 1. When a Pod's question is put to the organisation, the raising Pod's original wording is kept **verbatim** beside the plain-language question, together with a record of any simplification made.
 2. A hard trade-off is never silently softened, and technical reality is never hidden.
-3. The Chief of Staff of `[ORG]AIOC-SL`, who puts the question to the right person, does not answer the question itself, take the decision, or perform the analysis.
+3. The Chief of Staff of `[ORG]AIOC-SL`, who puts the question to the position that can answer it, does not answer the question itself, take the decision, or perform the analysis.
 
 ### §1.5 The base passes, now explainer EX-09
 
@@ -141,7 +141,7 @@ Each question is answered `yes` or `no`, **with a recorded reason**. Recording a
 - **S2 Boundary.** Is what is in scope clear, and is what is out of scope named, or "no material exclusions identified", with a reason?
 - **S3 Present state.** Is today's reality stated with the label and standing of each material claim, and is the honesty ceiling recorded (blueprint Annex B.3)? Where that ceiling is `organisation-stated` or lower, S3 is recorded `no — carried`, and the decision pass says so in the organisation's own language.
 - **S4 Outcome.** Is the desired change stated as a difference from today, not as a solution, and **stated so that two independent readers reading the same future state would agree whether it had been achieved**?
-- **S5 Verification.** Is there **at least one** success criterion, stated in a source and decided by the Requesting Authority, that names an observable state and is enough for the first later step? Remaining criteria may be marked `to be refined downstream`. Where criteria are given for a context entity, they are written on the deliverable's interface to it, never on its own behaviour. Each stated criterion must be checkable by someone other than the builder **and other than the Requesting Authority acting as judge**, against a named observable state of the world, with a method and a named measurer, and admissible under §3.2.
+- **S5 Verification.** Is there **at least one** success criterion, stated in a source and decided by the Requesting Authority, that names an observable state and is enough for the first later step? Remaining criteria may be marked `to be refined downstream`. Where criteria are given for a context entity, they are written on the deliverable's interface to it, never on its own behaviour. Each stated criterion must be checkable by a party other than the builder **and other than the Requesting Authority acting as judge**, against a named observable state of the world, with a method and a named measurer, and admissible under §3.2.
 - **S6 Constraints and obligations.** Are the hard limits stated, and what the organisation itself must provide or decide, each with its source?
 - **S7 Honesty.** Are the unknowns, the assumptions and the load-bearing `organisation-stated` claims named, each with what breaks if it is false?
 - **S8 Consistency.** Is every contradiction found either decided by the Requesting Authority, resolved by a cited precedence rule from a held source, or carried explicitly with its impact if wrong and the later decisions it blocks? (The earlier route "resolved by cited observation" is reserved, with the label `observed`: observation of real work is not admitted, and admitting it is a decision of GOV (blueprint §13, H-07).)

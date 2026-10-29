@@ -38,7 +38,7 @@ blueprint:
 > **What goes in**
 > 1. An approved design request, recorded in Source Lifecycle, the organisation's library of sources: who asks, what the design is for, what should be different, and how fine the model should be (light, standard or deep).
 > 2. The organisation's own documents, read only by reference. The input socket checks them, cuts them into numbered passages, labels each passage with how far it can be trusted, and hands the engine one sealed Input Pack.
-> 3. Answers to what the documents do not say. TOM never asks a person. It asks the Chief of Staff of Source Lifecycle, who gets the answer from the right person, has it approved and recorded, and returns it. Each answer arrives as a new version of the Input Pack.
+> 3. Answers to what the documents do not say. TOM never asks a person. It asks the Chief of Staff of Source Lifecycle, who gets the answer from the position that can give it, has it approved and recorded, and returns it. Each answer arrives as a new version of the Input Pack.
 > 4. Where the organisation has them, records of how the work runs today, exported by role and by process and never about a person. Where there are none, the model says so and goes on.
 >
 > Today Source Lifecycle is the only source. Other kinds of source plug into the same socket, each through its own adapter file, and only to be read.
@@ -54,7 +54,7 @@ blueprint:
 > 8. Walk: test the model against realistic situations, and record where it holds and where it stops.
 > 9. Decide and release: the organisation decides each element; the decided model is frozen and filed back in Source Lifecycle, and Process and Position Design is told at once.
 >
-> Each stage has one input, one output and one test that says when it is done. The frame and each part's design are written twice, separately, by two AI engines of different families; their differences are settled on the sources or put to the organisation. Inside every stage, three or more other independent AI engines check the output: each alone first, then in a short debate held to quotes. They do not vote. A person, the TOM Design Lead, rules on what they still dispute.
+> Each stage has one input, one output and one test that says when it is done. The frame and each part's design are written twice, separately, by two AI engines of different families; their differences are settled on the sources or put to the organisation. Inside every stage, three or more other independent AI engines check the output: each alone first, then in a short debate held to quotes. They do not vote. A human position, the TOM Design Lead, rules on what they still dispute.
 >
 > **What comes out: the TOM Release**
 > 1. The Decision Package: a plain summary, what is still unknown, and the choices to make.
@@ -248,7 +248,7 @@ card:
 | **The Requesting Authority**: the seat that asks for the design and decides it | `<code of the human Cell carrying [ORG]HOAC-GOV>`, or of a human Cell carrying a HOAC label whose `authority_scope`, delegated by that Cell under `delegate-authority`, covers the design decisions of this AIOC (Standard §4.4, item 8). Its code is the `answering_cell` of every non-delegable row, except a row of a listed type, whose `answering_cell` is the Cell that signs that type (for `set-purpose-or-values`, the Cell carrying `[ORG]HOAC-GOV`) |
 | **The TOM Design Lead position** | a HOAC position (`[ORG]HOAC-ACS`), a legal persona. Who holds it is the organisation's own mechanism, outside the system; this AIOC never sees it (Standard §1.1, item 9; `49GAION/DR-0049`). The Design Lead position and the Requesting Authority's position are two positions, two parties: T0 fails when they are the same Cell (TEST-TOM, case 29). Whether one person holds both is the organisation's own mechanism, which this AIOC never reads |
 | **The source of record** | `[ORG]AIOC-SL`: the only source this AIOC asks and files into. Sources of other types may be read beside it, each through its own adapter (§4.3). |
-| **The engine register** | held at the tool gateway, in the Charter (Standard §4.4 item 11); read by this AIOC (Annex E.12) |
+| **The engine register** | held at the tool gateway, which is carried by the Charter and run as code beside the core, outside the reach of every AI (Standard §4.4, item 11; `49GAION/DR-0052`); read by this AIOC (Annex E.12) |
 
 ### 2.2 Placement
 
@@ -262,7 +262,7 @@ card:
   - **`[ORG]AIOC-SL`** holds every source and every contact with a person. This AIOC holds only references and its own design records. It asks; the Chief of Staff of `[ORG]AIOC-SL` gets the answer and records it. Source Lifecycle never designs; this AIOC never records a source, except its own filed release and design reports.
   - **`[ORG]AIOC-PPD`**, the next stage, is told of each decided release directly (§5.9 step 8a), reads it from Source Lifecycle starting with its role register, and returns what it cannot use (§5.10). **`[ORG]AIOC-DI`**, the last stage, may also return what it cannot use. This AIOC writes no position or job description, and assigns work only to accountable roles.
   - **`[ORG]AIOC-OCO`** installs, fixes and upgrades this AIOC; it never grades it (Standard §2.3, item 9).
-  - **49GAION Edition Maker**, part 6 of 49GAION (`49GAION/DR-0035`), installs `[ORG]AIOC-TOM` in the `[ORG]AION` through OCO and uses its filed TOM Release. The AIOC itself belongs to the `[ORG]AION`. It is also a product on its own (`docs/OUTPUT.md` §14).
+  - **Installation.** The core designs and proposes `[ORG]AIOC-TOM`, the governing seat approves it, and the Top Management Group installs it in the operation and uses its filed TOM Release (the complete definition, Part E). The AIOC itself belongs to the `[ORG]AION`. It is also a product on its own (`docs/OUTPUT.md` §14).
 - **Overlap.** None known. Where an organisation already holds earlier design capabilities of the same kind, their content is carried here (`docs/DESIGN-BASIS.md`) and they are retired through OCO.
 
 ---
@@ -584,7 +584,7 @@ TEST-TOM-TRR v5: TEST-TOM v5, cases 4, 5, 8, 14, 15, 28, 73-76, 83, 91-93, 109-1
 | Field | Content |
 |---|---|
 | Name | Needs Requests |
-| What it is | The only way this AIOC learns anything a source does not already say. A needs request asks the **Chief of Staff of `[ORG]AIOC-SL`** for one thing: a document, an explainer, a confirmation, a status, an export or a decision. That Chief of Staff gets it from the right person, has it approved and recorded as a source, and answers by reference. With every pass goes a **Missing Report**: everything still missing for the operating model, by kind, in plain words. The full contract is in `docs/INTAKE-WITH-SOURCE-LIFECYCLE.md`; the forms and explainer templates are in `docs/ASKING-CATALOGUE.md`. Answers come back through the Input socket as new pack versions (§4.3). |
+| What it is | The only way this AIOC learns anything a source does not already say. A needs request asks the **Chief of Staff of `[ORG]AIOC-SL`** for one thing: a document, an explainer, a confirmation, a status, an export or a decision. That Chief of Staff gets it from the position that can give it, has it approved and recorded as a source, and answers by reference. With every pass goes a **Missing Report**: everything still missing for the operating model, by kind, in plain words. The full contract is in `docs/INTAKE-WITH-SOURCE-LIFECYCLE.md`; the forms and explainer templates are in `docs/ASKING-CATALOGUE.md`. Answers come back through the Input socket as new pack versions (§4.3). |
 | Purpose | Get what the design needs with the least burden on people, and without ever treating spoken words as a source. |
 | Scope | Does: write, batch, send, track and withdraw needs requests; send the Missing Report; receive answers and status messages by reference. Does not: contact a person; answer a request itself; draft the organisation's content; choose the person who answers; decide. |
 | Inputs | Needs candidates from any Pod, each with its leverage proof. |
